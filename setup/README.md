@@ -1,4 +1,5 @@
-## Machine Learning Projects Environment Setup (with Miniconda)
+## Machine Learning Projects 
+### Environment Setup (with Miniconda)
 
 This guide helps you install **Miniconda**, create a virtual environment, install dependencies, and launch Jupyter Notebook to run the machine learning projects in this repository.
 
@@ -17,8 +18,6 @@ This guide helps you install **Miniconda**, create a virtual environment, instal
      ```bash
      bash Miniconda3-latest-MacOSX-x86_64.sh
      ```
-
----
 
 ### Create a New Conda Environment
 
