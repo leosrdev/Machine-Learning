@@ -1,10 +1,10 @@
-# 🧪 Machine Learning Projects Environment Setup (with Miniconda)
+## Machine Learning Projects Environment Setup (with Miniconda)
 
 This guide helps you install **Miniconda**, create a virtual environment, install dependencies, and launch Jupyter Notebook to run the machine learning projects in this repository.
 
 ---
 
-## 📥 Step 1: Install Miniconda
+### Install Miniconda
 
 1. Visit the official Miniconda download page:  
    👉 [https://docs.conda.io/en/latest/miniconda.html](https://docs.conda.io/en/latest/miniconda.html)
@@ -20,14 +20,14 @@ This guide helps you install **Miniconda**, create a virtual environment, instal
 
 ---
 
-## ⚙️ Step 2: Create a New Conda Environment
+### Create a New Conda Environment
 
 Open your terminal (or Anaconda Prompt on Windows) and run:
 
 ```bash
 conda create -n ml-env python=3.11 -y
 ```
-🔹 Replace ml-env with your preferred environment name.
+🔹 Replace `ml-env` with your preferred environment name.  
 🔹 You can also specify a different Python version if needed.
 
 Activate the environment:
