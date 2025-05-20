@@ -62,7 +62,7 @@ $$
 \text{RMSE} = \sqrt{ \frac{1}{n} \sum_{i=1}^{n} \left( y_i - \hat{y}_i \right)^2 }
 $$
 
-### ✅ Coefficient of Determination (R² Score)
+### Coefficient of Determination (R² Score)
 
 The R² score (coefficient of determination) measures how well the regression model explains the variance in the target variable. It is defined as:
 
