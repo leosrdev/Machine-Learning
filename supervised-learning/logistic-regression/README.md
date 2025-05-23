@@ -3,16 +3,20 @@
 
 Unlike linear regression, which predicts continuous values, logistic regression outputs probabilities that are mapped to discrete class labels, typically `0` or `1`.
 
+
 Mathematically, the logistic function is:
+
+$$
 P(y = 1 \mid \mathbf{x}) = \frac{1}{1 + e^{-(\beta_0 + \beta_1 x_1 + \beta_2 x_2 + \cdots + \beta_n x_n)}}
+$$
 
-- \( P(y = 1 \mid \mathbf{x}) \): Probability that the output \( y \) is 1 (e.g., customer will churn), given input features \( \mathbf{x} \)
-- \( \beta_0 \): Intercept term (bias)
-- \( \beta_1, \beta_2, \dots, \beta_n \): Model coefficients or weights
-- \( x_1, x_2, \dots, x_n \): Input feature values
-- \( e \): Euler's number (base of the natural logarithm)
+- $$\( P (y = 1 \mid \mathbf{x}) \)$$: Probability that the output $$\( y \)$$ is 1 (e.g., customer will churn), given input features $$\( \mathbf{x} \)$$
+- $$\( \beta_0 \)$$: Intercept term (bias)
+- $$\( \beta_1, \beta_2, \dots, \beta_n \)$$: Model coefficients or weights
+- $$\( x_1, x_2, \dots, x_n \)$$: Input feature values
+- $$\( e \)$$: Euler's number (base of the natural logarithm)
 - The entire expression is passed through a **sigmoid function** to squash the output to a probability between 0 and 1.
-
+![sigmoid (1)](https://github.com/user-attachments/assets/2efb46ce-6600-4378-bebf-a632e4593ad8)
 
 ### Why is Logistic Regression Important?
 
