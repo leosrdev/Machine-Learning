@@ -21,6 +21,7 @@ Decision trees are non-parametric and easy to interpret, making them popular for
 4. **Predict by traversing** the tree from root to leaf for new data points.
 
 The resulting model can be represented as a set of if-then-else rules.
+![image](https://github.com/user-attachments/assets/3c5d7cca-cfe9-4050-9d6a-42ce3f7e6f8b)
 
 ---
 
