@@ -14,6 +14,9 @@ If the data is not linearly separable, SVM uses a technique called the **kernel 
 4. **Soft Margin**: Allows some misclassifications in exchange for a more generalizable model.
 5. **Class Weights**: Can handle imbalanced datasets by giving more importance to minority classes.
 
+![image](https://github.com/user-attachments/assets/3330540f-742a-4e29-bcad-c41ac3da6691)
+
+
 ---
 
 ## 🌍 Real-World Applications of SVM
