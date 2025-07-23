@@ -15,16 +15,42 @@ The K-Means algorithm operates through the following iterative process:
 
 This process minimizes the **within-cluster sum of squares (WCSS)**, which is a measure of the variance within each cluster.
 
-### Pseudocode
+### Sample (Python) code
+```python
+import pandas as pd
+from sklearn.cluster import KMeans
+from sklearn.preprocessing import StandardScaler
 
-```
-1. Select K initial centroids randomly
-2. Repeat until convergence:
-    a. Assign each point to the nearest centroid
-    b. Recalculate centroids as mean of assigned points
+# Step 1: Load data using pandas
+# Replace 'your_data.csv' with your actual file path or URL
+data = pd.read_csv('your_data.csv')
+
+# Optional: Select relevant features for clustering
+features = ['Age', 'Edu', 'Years Employed', 'Income', 'Card Debt',
+            'Other Debt', 'DebtIncomeRatio']
+
+X = data[features]
+
+# Step 2: (Recommended) Scale the features for better clustering performance
+scaler = StandardScaler()
+X_scaled = scaler.fit_transform(X)
+
+# Step 3: Create and train the KMeans model
+# Specify number of clusters, e.g., 3
+kmeans = KMeans(n_clusters=3, init='k-means++', random_state=42)
+
+# Fit the model to the scaled data
+kmeans.fit(X_scaled)
+
+# Step 4: Get cluster labels for each data point
+labels = kmeans.labels_
+
+# Optional: add cluster labels back to the original dataframe
+data['Cluster'] = labels
 ```
 
 <img width="587" height="420" alt="image" src="https://github.com/user-attachments/assets/4f5216a9-02cc-4593-aade-1bd9afdc6dc6" />
+
 
 
 ## Real-World Applications of K-Means
