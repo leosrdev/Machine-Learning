@@ -80,8 +80,87 @@ cov(x,y) & var(x)
 \end{pmatrix}
 $$
 
+### 3. Application of normal distribuition
+In this example we will calculate the probability of finding a NBA player with height between 200 and 210 cm given a normal distribuition of heights.
 
 
+**NBA Players**
+
+| Player              | Height (cm) |
+|---------------------|-------------|
+| LeBron James        | 203         |
+| Michael Jordan      | 198         |
+| Shaquille O’Neal    | 216         |
+| Stephen Curry       | 188         |
+| Kobe Bryant         | 198         |
+| Kevin Durant        | 206         |
+| Magic Johnson       | 206         |
+| Tim Duncan          | 211         |
+| Yao Ming            | 229         |
+| Kareem Abdul-Jabbar | 218         |
 
 
+The mean:
 
+$$
+\mu = \frac{1}{N} \sum_{i=1}^{N} x_i = \frac{203+198+216+188+198+206+206+211+229+218}{10} = 207.3cm
+$$
+
+The variance:
+
+$$
+\begin{matrix}
+(203-207.3)^2+ \\  
+(198-207.3)^2+ \\
+(216-207.3)^2+ \\ 
+(188-207.3)^2+ \\ 
+(198-207.3)^2+ \\ 
+(206-207.3)^2+ \\ 
+(206-207.3)^2+ \\ 
+(211-207.3)^2+ \\ 
+(229-207.3)^2+ \\ 
+(218-207.3)^2  
+\end{matrix}
+$$
+
+$$
+\sum_{i=1}^{N} (x_i - \mu)^2 = 1240.9
+$$
+
+
+$$
+\sigma^2 = \frac{1}{N} \sum_{i=1}^{N} (x_i - \mu)^2 = \frac{1240.9}{10} = 124.09 (cm^2)
+$$
+
+The standard deviation:
+
+$$
+\sigma = \sqrt{\sigma^2} = 11.14 cm
+$$
+
+Convert heights to Z scores  
+For 200 cm  
+
+$$
+z_1 = \frac{x_1 - \mu}{\sigma} = \frac{200-207.3}{11.14} = -0.655
+$$
+
+$$
+z_2 = \frac{x_2 - \mu}{\sigma} = \frac{210-207.3}{11.14} = 0.242
+$$
+
+From starndard normal [CDF](https://en.wikipedia.org/wiki/Standard_normal_table) tables:  
+
+$$
+\Phi(z_1) \approx 0.256, \quad \Phi(z_2) \approx 0.596
+$$
+
+$$
+P(200 < X < 210) \approx 0.596 - 0.256
+$$
+
+$$
+P(200 < X < 210) \approx 0.340
+$$
+
+This means there is a 34% probability that a randomly chosen player has a height between 200 cm and 210 cm.
